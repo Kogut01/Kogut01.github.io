@@ -60,12 +60,17 @@ button {
     display: none;
 }
 
-img {
+#prezent {
     max-width: 60%;
     height: auto;
     cursor: pointer;
 }
 
+#napis{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 
 
