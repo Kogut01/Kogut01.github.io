@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Urodziny</title>
+
+</head>
+<body>
+    <section>
+        <video id="my-video" controls>
+            <source src="Egghead - A 30 sec short film.mp4" type="video/mp4">
+        </video>
+
+        <button id="XD"> <b> chuj </b> </button>
+    </section>
+
+    <script> 
+        function showNextButton() {
+			var button = document.getElementById("XD");
+			button.style.display = "block";
+			button.onclick = function() {
+				window.location.href = "urodziny.html";
+			};
+		}
+
+		var video = document.getElementById("my-video");
+		video.addEventListener("ended", function() {
+            console.log("Film został obejrzany.");
+			showNextButton();
+            console.log("Przycisk Następny został wyświetlony.");
+		});
+    </script>
+</body>
+</html>
