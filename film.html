@@ -12,28 +12,29 @@
 </head>
 <body>
     <section>
-        <video id="my-video" controls>
-            <source src="Egghead - A 30 sec short film.mp4" type="video/mp4">
-        </video>
-
-        <button id="XD"> <b> chuj </b> </button>
+        <div class="video-container">
+            <video id="my-video" controls>
+                <source src="Egghead - A 30 sec short film.mp4" type="video/mp4">
+            </video>
+            <button id="show_button"> <b> chuj </b> </button>
+        </div>
     </section>
 
     <script> 
         function showNextButton() {
-			var button = document.getElementById("XD");
-			button.style.display = "block";
-			button.onclick = function() {
-				window.location.href = "urodziny.html";
-			};
-		}
+            var button = document.getElementById("show_button");
+            button.style.display = "block";
+            button.onclick = function() {
+                window.location.href = "urodziny.html";
+            };
+        }
 
-		var video = document.getElementById("my-video");
-		video.addEventListener("ended", function() {
+        var video = document.getElementById("my-video");
+        video.addEventListener("ended", function() {
             console.log("Film został obejrzany.");
-			showNextButton();
+            showNextButton();
             console.log("Przycisk Następny został wyświetlony.");
-		});
+        });
     </script>
 </body>
 </html>
